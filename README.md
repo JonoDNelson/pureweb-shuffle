@@ -23,6 +23,7 @@ If for whatever reason that doesn't work, you can build an executable from the s
 - To be more efficient, some modularity was removed. (Initially, the shuffling and printing was done separately, but to save an iteration of the array the printing was done at the time of shuffling).
   - Ideally the shuffle algorithm would be templated to work on all std containers as well, but I figured that was beyond the scope of the assessment. (I could just explain that here!)
 - I changed from cout to printf to print the values to get a bit more speed.
+- I seeded rand() with the std::random_device instead of generating random numbers with it since this application doesn't require 'true' randomness.
 
 ## Algorithm (simple) explanation
 
