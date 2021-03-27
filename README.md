@@ -2,9 +2,9 @@
 
 In this directory you'll find my simple shuffle solution for your technical assessment.
 
->Using the language of your choice, implement the following program named Shuffle:
-  > Input a single integer N.
-  > Output the integers 1..N in random order.
+> "Using the language of your choice, implement the following program named Shuffle:<br>
+  > Input a single integer N.<br>
+  > Output the integers 1..N in random order.<br>
   > Optimize for speed."
 
 ## Running the solution
@@ -30,7 +30,7 @@ If for whatever reason that doesn't work, you can build an executable from the s
 1. Generate an array A of size N, from 1 -> N.
 2. Iterate backwards through A, swapping A[i] with another random element A[j], where 0 <= j < i, and printing immediately.
 
-I generate the array to quickly/easily ensure the whole range is present, and decreasing the range of elements to swap ensures that: I save an extra iteration of the array in computation, and prevent duplicate prints by not swapping future elements I've already printed.
+I generate the array to quickly/easily ensure the whole range is present, and printing immediately then decreasing the range for elements to swap at each step ensures that: I save an unnecessary iteration of the array in computation, and prevent duplicate prints by not swapping future elements I've already printed.
 
 ## Future possible improvements
 
